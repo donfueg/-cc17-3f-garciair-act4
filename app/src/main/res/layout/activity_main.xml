@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="24dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="404dp"
+        android:layout_height="wrap_content"
+        android:text="Tip Time!"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#7128E0"
+        android:padding="14dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/cost_of_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:hint="How Much Do You Want to Tip?"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How was the service?">
+
+    </TextView>
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/amazing"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Amazing (20%)"
+            tools:ignore="DuplicateIds" />
+
+        <RadioButton android:id="@+id/good"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Good (18%)"
+            tools:ignore="DuplicateIds" />
+
+        <RadioButton
+            android:id="@+id/ok"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="OK (15%)"
+            tools:ignore="DuplicateIds" />
+
+    </RadioGroup>
+
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:minHeight="48dp"
+        android:text="Round up tip?"
+        android:textSize="15dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml,TextSizeCheck" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="Calculate"
+        android:textSize="25dp">
+    </Button>
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tip amount: $0.00"
+        android:textAlignment="viewEnd"
+        android:layout_marginLeft="260dp">
+
+    </TextView>
+
+    </LinearLayout>
